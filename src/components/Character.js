@@ -5,10 +5,10 @@ import styled from 'styled-components';
 const StyledCharacter = styled.div`
     color: #2e557c;
     border: solid 5px;
-    background: white;
+    background: #fffdfa;
     margin: 2% auto;
     width: 75%;
-    box-sizing: border-box;
+    padding: 1% 0 2%;
 
     h1 {
         margin: 3%;
@@ -22,11 +22,11 @@ const StyledCharacter = styled.div`
 
     span {
         font-weight: bold;
+        text-transform: capitalize;
     }
 
     div {
-        padding-left: 2%;
-        text-align: left;
+        text-align: center;
         color: #443e3e;
     }
 `
@@ -45,9 +45,9 @@ const Character = function({character}) {
         <h1>{character["name"]}</h1>
         {currCharacter && fixedAttributes.map(attribute => {
             return (
-                <div>
+                <div key = {attribute}>
                 <span>{attribute}: </span>
-                <p key = {attribute}>{character[attribute]}</p>
+                <p>{character[attribute]}</p>
                 </div>
             )
         })}
