@@ -4,7 +4,6 @@ body {
   font-family: sans-serif;
   background-image: url('./images/sw-bg.jpg');
   background-size: fill;
-  background-repeat: no-repeat;
 }
 
 @font-face {
