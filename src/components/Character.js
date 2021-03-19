@@ -7,8 +7,8 @@ const StyledCharacter = styled.div`
     border: solid 5px;
     background: #fffdfa;
     margin: 2% auto;
-    width: 75%;
-    padding: 1% 0 2%;
+    width: 40%;
+    padding: 2% 0 2%;
 
     h1 {
         margin: 3%;
